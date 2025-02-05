@@ -1,0 +1,97 @@
+:root {
+  --background-color : #0f4f75;
+  --background-color-light : #3282b8;
+  --blue-component : #4fc6d1;
+  --yellow-title : #dce120;
+  --dark-bg : #1c1c1c;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color-light);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/equipe_hydro2024.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-bottom: 4rem;
+  background-attachment: fixed;
+
+  /* https://developer.mozilla.org/fr/docs/Web/CSS/CSS_transitions/Using_CSS_transitions */
+  transition: 
+    opacity 0.1s easy-in-out,;
+    /* background-image 1s linear; */
+    /* background 0.5s lienar; */
+}
+
+.fondu{
+  background-color: var(--background-color-light);
+}
+
+nav {
+  z-index: 1;
+  position: fixed;
+  background: #000;
+  height: 60px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  box-sizing: border-box;
+  border-bottom: 2px solid #4fc6d1;
+}
+
+.logo_nav{
+  height: 40px;
+  width: 40px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  min-height: 15vh;
+  background-color: var(--dark-bg);
+  margin-top: 5rem;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width : 60%;
+}
+
+footer li, nav li {
+  list-style: none;
+}
+
+footer a{
+  text-decoration: underline;
+  color: #fff;
+}
+
+footer p {
+  color: #fff;
+}
+
+@media screen and (max-width: 768px) {
+  header li {
+    font-size: 0.75rem;
+  }
+}
